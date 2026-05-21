@@ -1,0 +1,17 @@
+name: xenobot-alife-cleanup
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - pyyaml
+  - tqdm
+  - pytest
+  - jupyter
+  - ipykernel
+  - pip
+  - pip:
+      - -e .[dev]

@@ -1,0 +1,21 @@
+seed: 7
+grid:
+  width: 6
+  height: 6
+env:
+  world_size: [12.0, 6.0]
+  debris_count: 40
+  episode_steps: 400
+  flow_mode: vortex
+  flow_strength: 0.04
+  collector_radius: 0.35
+  energy_budget: 1.0
+evolution:
+  population_size: 24
+  generations: 10
+  mutation_rate: 0.08
+  elite_count: 4
+controller:
+  frequency: 1.0
+  coupling: 0.2
+  amplitude: 0.08

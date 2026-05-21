@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<VXA Version="1.1">
+  <Simulator>
+    <Integration>
+      <Integrator>0</Integrator>
+      <DtFrac>0.9</DtFrac>
+    </Integration>
+    <StopCondition>
+      <StopConditionType>2</StopConditionType>
+      <StopConditionValue>1.0</StopConditionValue>
+    </StopCondition>
+    <RecordHistory>
+      <RecordStepSize>100</RecordStepSize>
+      <RecordVoxel>1</RecordVoxel>
+      <RecordLink>0</RecordLink>
+      <RecordFixedVoxels>0</RecordFixedVoxels>
+    </RecordHistory>
+  </Simulator>
+  <Environment>
+    <Gravity>
+      <GravEnabled>1</GravEnabled>
+      <GravAcc>-9.81</GravAcc>
+      <FloorEnabled>1</FloorEnabled>
+    </Gravity>
+    <Thermal>
+      <TempEnabled>1</TempEnabled>
+      <TempAmp>39</TempAmp>
+      <TempPeriod>0.025</TempPeriod>
+      <VaryTempEnabled>0</VaryTempEnabled>
+      <TempBase>25</TempBase>
+    </Thermal>
+  </Environment>
+  <VXC Version="0.94">
+    <Palette>
+      <Material ID="1">
+        <MatModel>0</MatModel>
+        <Mechanical>
+          <MatDensity>1000.0</MatDensity>
+          <ElasticMod>1000000.0</ElasticMod>
+          <PoissonsRatio>0.35</PoissonsRatio>
+          <CTE>0.01</CTE>
+        </Mechanical>
+      </Material>
+      <Material ID="2">
+        <MatModel>0</MatModel>
+        <Mechanical>
+          <MatDensity>1000.0</MatDensity>
+          <ElasticMod>500000.0</ElasticMod>
+          <PoissonsRatio>0.35</PoissonsRatio>
+          <CTE>0.01</CTE>
+        </Mechanical>
+        <Cilia>1</Cilia>
+        <PhaseOffset>0.0</PhaseOffset>
+      </Material>
+      <Material ID="3">
+        <MatModel>0</MatModel>
+        <Mechanical>
+          <MatDensity>1000.0</MatDensity>
+          <ElasticMod>500000.0</ElasticMod>
+          <PoissonsRatio>0.35</PoissonsRatio>
+          <CTE>0.01</CTE>
+        </Mechanical>
+        <Cilia>1</Cilia>
+        <PhaseOffset>3.14159</PhaseOffset>
+      </Material>
+    </Palette>
+    <Structure replace="replace" Compression="ASCII_READABLE">
+      <X_Voxels>8</X_Voxels>
+      <Y_Voxels>8</Y_Voxels>
+      <Z_Voxels>8</Z_Voxels>
+      <Data>
+        <Layer>0230000010020022303302213000003103000000000000000020000020300000</Layer>
+        <Layer>0310000023010010300312000002030101000000332000001220000011200000</Layer>
+        <Layer>3300000030000000201003103013000032310000323000001030000003000000</Layer>
+        <Layer>0030000100000002200202000002220000010000000320000020300003300000</Layer>
+        <Layer>0211000130120000200000000102110000032000000000001100000013000000</Layer>
+        <Layer>0010032322023100030013003220200001130000000110000001000001113000</Layer>
+        <Layer>1000032001020000001201001200120030030000001000000000000003000000</Layer>
+        <Layer>3200000002300000000100000000000010021000001200000000000000000000</Layer>
+      </Data>
+    </Structure>
+  </VXC>
+</VXA>

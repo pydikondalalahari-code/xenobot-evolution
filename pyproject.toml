@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xenobot-alife-cleanup"
+version = "0.1.0"
+description = "Starter exercise for embodied AI, artificial life, and simulated xenobot design"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "pandas>=2.0",
+  "matplotlib>=3.7",
+  "pyyaml>=6.0",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "ruff>=0.4", "jupyter>=1.0", "ipykernel>=6.29"]
+evogym = ["evogym>=2.0.0"]
+pybullet = ["pybullet>=3.2.7"]
+data = ["xarray>=2024.1", "netCDF4>=1.6", "earthaccess>=0.9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
